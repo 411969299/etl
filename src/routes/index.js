@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 // import { Router, Route, hashHistory, IndexRedirect } from 'react-router';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import interfaceList from '../components/interface/list';
+import interfaceAdd from '../components/interface/add';
 import datasourceList from '../components/datasource/list';
 import interfaceTypeList from '../components/interfaceType/list';
 import appList from '../components/app/list';
@@ -19,6 +20,8 @@ import roleList from '../components/role/list';
 import userList from '../components/user/list';
 import pushToOpenSearch from '../components/openSearch/pushToOpenSearch';
 import pushToOpenCustom from '../components/openSearch/pushToOpenCustom';
+import editor from '../components/aceEditor/index';
+
 
 export default class CRouter extends Component {
 
@@ -26,9 +29,10 @@ export default class CRouter extends Component {
         return (
 
                 <Switch>
-                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/" component={interfaceList}/>
                     <Route exact path="/home" component={Home}/>
                     <Route exact path="/interface/list" component={interfaceList}/>
+                    <Route exact path="/interface/add" component={interfaceAdd}/>
                     <Route exact path="/datasource/list" component={datasourceList}/>
                     <Route exact path="/interfaceType/list" component={interfaceTypeList}/>
                     <Route exact path="/app/list" component={appList}/>
@@ -42,6 +46,7 @@ export default class CRouter extends Component {
                     <Route exact path="/user/list" component={userList}/>
                     <Route exact path="/openSearch/pushToOpenSearch" component={pushToOpenSearch}/>
                     <Route exact path="/openSearch/pushToOpenCustom" component={pushToOpenCustom}/>
+                    <Route exact path="/ui/editor" component={editor}/>
                     <Route render={() => <Redirect to="/404" />} />
 
                 </Switch>

@@ -27,6 +27,238 @@
   to { transform: rotate(360deg); }
 }
 
+.routesBack{
+  padding-top: 16px;
+}
 .ant-layout-sider .ant-layout-sider-trigger{
   position: relative;
+}
+#root .ant-table-tbody > tr > td {
+  padding:12px 14px;
+}
+.selfBtn .ant-btn {
+  margin: 0 5px;
+}
+.ant-table-body table tr.ant-table-row {
+  height: 67px;
+  min-height:67px;
+}
+
+.ant-table-body table thead.ant-table-thead th{
+  background-color: #EBF9FF;
+}
+
+#root .ant-card-type-inner .ant-card-head{
+  /*background-color: #f2f2f5;*/
+
+}
+.routesBack .ant-card-type-inner .ant-card-head-title{
+  color:#575757;
+  font-weight: bold;
+}
+.routesBack .ant-table table {
+  border-radius: 10px 10px 0 0;
+}
+.routesBack .ant-table-thead > tr:first-child > th:first-child{
+  border-top-left-radius: 10px;
+
+}
+.routesBack .ant-table-thead > tr:first-child > th:last-child{
+  border-top-right-radius: 10px;
+}
+.routesBack .ant-form-item,.ant-modal-body .ant-form-item{
+  margin-bottom: 12px;
+}
+div.ant-form-extra{
+  display: inline;
+  color: red;
+}
+
+.editable-cell {
+  position: relative;
+}
+
+.editable-cell-input-wrapper,
+.editable-cell-text-wrapper {
+  padding-right: 24px;
+}
+
+.editable-cell-text-wrapper {
+  padding: 5px 24px 5px 5px;
+}
+
+.editable-cell-icon,
+.editable-cell-icon-check {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  cursor: pointer;
+}
+
+.editable-cell-icon {
+  line-height: 18px;
+  display: none;
+}
+
+.editable-cell-icon-check {
+  line-height: 28px;
+}
+
+.editable-cell:hover .editable-cell-icon {
+  display: inline-block;
+}
+
+.editable-cell-icon:hover,
+.editable-cell-icon-check:hover {
+  color: #108ee9;
+}
+
+.editable-add-btn {
+  margin-bottom: 8px;
+}
+
+.editTable .ant-table-body .ant-table-thead > tr > th,.editTable .ant-table-body .ant-table-tbody > tr > td{
+  padding:0;
+}
+.ant-table-body .ant-table-thead > tr > th{
+  text-align: center;
+}
+.subBtn button{
+  margin:0 10px;
+}
+
+
+/* 编辑器 样式*/
+.aceEditor-menu{
+  padding: 0 2%;
+  width:20%;
+  float: left;
+}
+
+.ant-layout .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-layout .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+  background-color: #00c1de;
+}
+
+/*登录页面*/
+#Login{
+  background-color: #1F2325;
+  background-image: url('./images/bg.jpg');
+  background-size: cover;
+  height: 640px;
+}
+.login-topbar{
+  height: 60px; overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.login-topbar .bar{
+  float: right;
+  color: #fff;
+  font-size: 14px;
+  line-height: 60px;
+  padding-right: 30px;
+}
+.login-topbar .bar a{
+  color: #fff;
+}
+#Login .login-body{
+  width: 990px;
+  margin: auto;
+  position: relative;
+  height: 388px;
+  padding-top: 74px;
+}
+#Login .login-body .MsgBox{
+  float: left;
+  margin-top: 90px;
+}
+#Login .login-body .MsgBox h1{
+  font-size: 30px;
+  color: #FFFFFF;
+  line-height: 36px;
+  margin-bottom: 19px;
+  font-weight: bold;
+}
+#Login .login-body .MsgBox h2{
+  font-size: 25px;
+  color: #FFFFFF;
+  line-height: 36px;
+  margin-bottom: 19px;
+  font-weight: bold;
+}
+ul,li{
+  list-style: none;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+#Login .login-body .MsgBox li{
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.47px;
+  line-height: 30px;
+
+}
+
+#Login .login-body .loginBox{
+  background-color: #fff;
+  float: right;
+  padding: 20px;
+  width:400px;
+  border-radius: 10px; overflow: hidden;
+}
+
+#Login .login-body .login-form-button {
+  width: 100%;
+}
+.clearDiv:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+#Login .login-footer{
+  background-color: #373D41;
+
+  position: absolute;
+  top:640px;
+  width: 100%;
+}
+#Login .login-footer .login-footer-ul{
+  text-align: center;
+  height: 70px;
+  margin-top: 30px;
+}
+#Login .login-footer li{
+  display: inline-block;
+  margin-right: 35px;
+}
+#Login .login-footer li a{
+  font-size: 16px;
+  color: #9B9EA0;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#Login .login-footer li a:hover{
+  color: #28d0e9 !important;
+}
+
+
+#Login .jieshao{
+  height: 110px;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+#Login .jieshao-ul{
+
+}
+#Login .jieshao-ul li a{
+  font-size: 14px;
+  color: #73777A;
+  margin-right: 10px;
+  margin-top: 10px;
 }
